@@ -6,6 +6,7 @@ require 'pharos/version'
 require 'pharos/command'
 require 'pharos/error'
 require 'pharos/root_command'
+require 'pathname'
 
 module Pharos
   CRIO_VERSION = '1.11.2'
@@ -14,4 +15,6 @@ module Pharos
   ETCD_VERSION = ENV.fetch('ETCD_VERSION') { '3.2.18' }
   KUBELET_PROXY_VERSION = '0.3.7'
   COREDNS_VERSION = '1.1.3'
+
+  RootPath = Pathname.new(__dir__).realpath
 end
