@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'os_release'
-require_relative 'cpu_arch'
+require 'pharos/configuration/os_release'
+require 'pharos/configuration/cpu_arch'
 
 module Pharos
   module Configuration

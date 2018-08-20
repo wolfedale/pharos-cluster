@@ -3,8 +3,8 @@
 require 'dry-validation'
 require 'fugit'
 
-require_relative 'addons/struct'
-require_relative 'logging'
+require 'pharos/addons/struct'
+require 'pharos/logging'
 
 module Pharos
   # @param name [String]

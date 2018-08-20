@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'token_webhook'
+require 'pharos/configuration/token_webhook'
 
 module Pharos
   module Configuration

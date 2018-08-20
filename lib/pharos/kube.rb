@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'k8s-client'
-require_relative 'kube/config'
+require 'pharos/kube/config'
 
 module Pharos
   module Kube

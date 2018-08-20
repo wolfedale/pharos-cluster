@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative 'up_command'
-require_relative 'reset_command'
-require_relative 'version_command'
-require_relative 'kubeconfig_command'
+require 'pharos/up_command'
+require 'pharos/reset_command'
+require 'pharos/version_command'
+require 'pharos/kubeconfig_command'
 
 module Pharos
   class RootCommand < Pharos::Command

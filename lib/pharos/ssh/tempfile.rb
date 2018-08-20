@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'securerandom'
-require_relative 'remote_file'
+require 'pharos/ssh/remote_file'
 
 module Pharos
   module SSH

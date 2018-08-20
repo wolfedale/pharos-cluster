@@ -2,7 +2,7 @@
 
 require 'yaml'
 require 'erb'
-require_relative 'yaml_file/namespace'
+require 'pharos/yaml_file/namespace'
 
 module Pharos
   # Reads YAML files and optionally performs ERB evaluation

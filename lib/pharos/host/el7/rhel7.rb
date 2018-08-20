@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'el7'
+require 'pharos/host/el7/el7'
 
 module Pharos
   module Host

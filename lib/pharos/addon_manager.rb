@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'addon'
-require_relative 'logging'
+require 'pharos/addon'
+require 'pharos/logging'
 
 module Pharos
   class AddonManager
@@ -19,7 +19,7 @@ module Pharos
     # @return [Array<Class<Pharos::Addon>>]
     def self.load_addons(*dirs)
       dirs.each do |dir|
-        Dir.glob(File.join(dir, '**', 'addon.rb')).each { |f| require(f) }
+        Dir.glob(File.join(dir, '**', 'addon.rb')).each { |f| require(File.expand_path(f)) }
       end
 
       addons

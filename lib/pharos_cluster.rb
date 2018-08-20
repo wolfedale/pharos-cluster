@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require "clamp"
-require_relative "pharos/autoload"
-require_relative "pharos/version"
-require_relative "pharos/command"
-require_relative "pharos/error"
-require_relative "pharos/root_command"
+require 'clamp'
+require 'pharos/autoload'
+require 'pharos/version'
+require 'pharos/command'
+require 'pharos/error'
+require 'pharos/root_command'
 
 module Pharos
   CRIO_VERSION = '1.11.2'

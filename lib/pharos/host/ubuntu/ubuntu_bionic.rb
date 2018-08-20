@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'ubuntu'
+require 'pharos/host/ubuntu/ubuntu'
 
 module Pharos
   module Host

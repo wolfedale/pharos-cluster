@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'types'
-require_relative 'configuration/host'
-require_relative 'configuration/api'
-require_relative 'configuration/network'
-require_relative 'configuration/etcd'
-require_relative 'configuration/authentication'
-require_relative 'configuration/cloud'
-require_relative 'configuration/audit'
-require_relative 'configuration/kube_proxy'
-require_relative 'configuration/kubelet'
-require_relative 'configuration/telemetry'
+require 'pharos/types'
+require 'pharos/configuration/host'
+require 'pharos/configuration/api'
+require 'pharos/configuration/network'
+require 'pharos/configuration/etcd'
+require 'pharos/configuration/authentication'
+require 'pharos/configuration/cloud'
+require 'pharos/configuration/audit'
+require 'pharos/configuration/kube_proxy'
+require 'pharos/configuration/kubelet'
+require 'pharos/configuration/telemetry'
 
 module Pharos
   class Config < Pharos::Configuration::Struct
